@@ -1,13 +1,13 @@
 import React from 'react'
-import { HashRouter } from 'react-router-dom'
+import { HashRouter, BrowserRouter } from 'react-router-dom'
 import Tabbar from './component/Tabbar'
-import MRouter from './router'
+import MRouter from './router/index-bak'
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
         <MRouter></MRouter>
         <Tabbar/>
-    </HashRouter>
+    </BrowserRouter>
   )
 }

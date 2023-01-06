@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import FilmItems from './FilmItems'
 
 export default function Nowplaying() {
   const [ hotlist, setHotlist ] = useState([])
@@ -50,7 +51,7 @@ export default function Nowplaying() {
     <div>
       <ul>
       {hotlist && hotlist.map((item) => {
-        return <li key={item.filmId} onClick={() => handleChange(item.filmId)}>{item.name}</li>
+        return <FilmItems key={item.filmId} {...item}/>
       })}
       </ul>
     </div>
