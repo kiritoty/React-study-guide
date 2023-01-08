@@ -26,7 +26,7 @@ export default function MRouter() {
                                         </AuthComponent>}/>
 
         <Route path="/detail" element={LazyLoad("Detail")}></Route>
-        <Route path="/detail/:id" element={LazyLoad("DetailSearch")}></Route>
+        <Route path="/detail/:id" element={LazyLoad("Detail")}></Route>
         <Route path="/login" element={LazyLoad("Login")}></Route>
 
         {/* <Route path="*" element={<Navigate to="/film"/>}/> */}

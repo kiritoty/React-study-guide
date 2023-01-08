@@ -4,7 +4,7 @@ import './Tabbar.css'
 
 export default function Tabbar() {
   return (
-    <footer>
+    <footer className='tabbar'>
         <ul>
             <li>
                 <NavLink to="/film" className={({isActive}) => {return isActive ? "eth-active":''}}>电影</NavLink>
