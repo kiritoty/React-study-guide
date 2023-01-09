@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const slice = createSlice({
-    name: "count",
+    name: "counterReducer",
     initialState: {
         count: 0
     },
