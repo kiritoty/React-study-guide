@@ -1,4 +1,8 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+
+const countThunk = createAsyncThunk("countThunk", async (payload, {dispatch}) => {
+
+})
 
 const slice = createSlice({
     name: "counterReducer",
