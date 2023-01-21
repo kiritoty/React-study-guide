@@ -4,6 +4,6 @@ import countReducer from './Feature/countSlice';
 export const store = configureStore({
     devTools: process.env.NOD_ENV !== 'production',
     reducer: { 
-        countReducer
+        testRed: countReducer
     }
 })

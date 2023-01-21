@@ -5,7 +5,7 @@ import { countThunk } from './redux/Thunk/countThunk'
 
 export default function Count() {
     const [ selectNum, setSelectNum ] = useState(1)
-    const { countNum } = useSelector(state => state.countReducer)
+    const { countNum } = useSelector(state => state.testRed)
     const dispatch = useDispatch()
 
     const handleAdd = () => {
